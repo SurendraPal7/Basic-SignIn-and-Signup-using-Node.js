@@ -9,10 +9,9 @@ app.use(cors());
 app.use(express.json());
 const dbuser = encodeURIComponent(process.env.DBUSER);
 const dbpass = encodeURIComponent(process.env.DBPASS);
-
-mongoose.connect(`mongodb+srv://${dbuser}:${dbpass}@cluster0.ucggsmz.mongodb.net/hara?retryWrites=true&w=majority&appName=Cluster0
+mongoose.connect(`mongodb+srv://${dbuser}:${dbpass}@cluster0.7mbbyzy.mongodb.net/hara?retryWrites=true&w=majority&appName=Cluster0
 `).then(() => {
-  app.listen(8000, () => {
+  app.listen(3000, () => {
     console.log("Server started");
   });
 });
